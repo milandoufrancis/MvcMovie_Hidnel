@@ -1,0 +1,16 @@
+﻿@model MvcMovie.Models.Movie
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Movie Details</h1>
+
+<div>
+    <hr />
+    <partial name="_Details.cshtml" />
+</div>
+<div>
+    <a class="btn btn-outline-info" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+    <a class="btn btn-outline-info" asp-action="Index">Back to List</a>
+</div>
